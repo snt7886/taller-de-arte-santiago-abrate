@@ -117,9 +117,8 @@ body {
 /**header**/
 #header {
     /* Aqui agregué gradientes para el color del header de una pagina CSS Gradient*/
-    background: rgb(208,0,161);
-    background: linear-gradient(90deg, rgba(208,0,161,1) 5%, rgba(217,110,221,1) 40%, rgba(231,255,178,1) 80%);
-    width: 100vw; 
+    width: 100vw;
+    background: rgb(106,0,252); 
     height: 20vh;
     display: grid;
     grid-template-areas: "logo title title buttons"
@@ -128,7 +127,15 @@ body {
     grid-template-rows: 50% 50%;
     padding-top: 10px;
     border-bottom: 1px solid black;
+    animation: cambioHeader 10s ease infinite;
 }
+@keyframes cambioHeader {
+    0%{background-color: rgb(106,0,252);}
+    20%{background-color: rgb(255,14,147);}
+    40%{background-color: rgb(255,161,12);}
+    60%{background-color: rgb(255,67,96);}
+    80%{background-color: rgb(255,5,157);}
+} 
 /**logo**/
 .logo {
     grid-area: logo;
@@ -266,8 +273,14 @@ nav {
     font-style: italic;
 }
 .cuadros_title:hover {
+    animation: cambioTitles 5s ease infinite;
     color: magenta;
 }
+@keyframes cambioTitles {
+    0%{color: magenta;}
+    33% {color: violet;}
+    66% {color: pink;}
+}  
     /*imagenes*/ 
 .cuadros_uno {
     grid-area: uno;
@@ -348,6 +361,7 @@ nav {
 }
 .vidro_title:hover {
     color: magenta;
+    animation: cambioTitles 5s ease infinite;
 }
     /*imagenes*/ 
 .vidro_uno {
@@ -429,6 +443,7 @@ nav {
 }
 .porce_title:hover {
     color: magenta;
+    animation: cambioTitles 5s ease infinite;
 }
     /*imagenes*/ 
 .porce_uno {
@@ -510,6 +525,7 @@ nav {
 }
 .velas_title:hover {
     color: magenta;
+    animation: cambioTitles 5s ease infinite;
 }
     /*imagenes*/ 
 .velas_uno {
@@ -601,7 +617,15 @@ nav {
     display: grid;
     grid-template-areas: "direccion redes contacto";
     grid-template-columns: repeat(3, 1fr);
+    animation: cambioFooter 10s ease infinite;
 }
+@keyframes cambioFooter {
+    0%{background-color: rgb(232, 95, 241);}
+    20%{background-color: rgb(211, 44, 253);}
+    40%{background-color: rgb(125, 12, 255);}
+    60%{background-color: rgb(211, 44, 253);}
+    80%{background-color: rgb(232, 95, 241);}
+} 
 .footer_direccion {
     grid-area: direccion;
     display: flex;
