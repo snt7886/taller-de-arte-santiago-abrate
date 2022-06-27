@@ -159,6 +159,7 @@ h1 {
     font-family: 'Brygada 1918', serif; 
     font-size: 35px; 
     font-style: italic; 
+    text-shadow: 1px black;
 }
 /**barra de menu**/
 nav {
