@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de Eugenia</title>
+    <!-- link al css-->
     <link rel="stylesheet" href="style.css">
+    <!-- link al font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap" rel="stylesheet"> 
+    <!-- link a aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="container">
@@ -79,7 +83,7 @@
             <div class="velas_cuatro"><a href="pages/tienda.html" target="_blank"><img src="imagenes/velas_4.jpeg" alt="" class="velas_img"></a>$ ****,**</div>
         </section>
         <!-- video de presentacion --> 
-        <div id="video">
+        <div id="video" data-aos="flip-left">
             <div class="video_title">"Titulo"</div>
             <!-- es un video provisorio, aqui debe ir una presentación -->
             <iframe class="video_yt" width="560" height="315" src="https://www.youtube.com/embed/_nBE6Vmsozs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -110,5 +114,9 @@
     <!-- fin del footer -->
     </div>
     <!-- fin de index.html-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
