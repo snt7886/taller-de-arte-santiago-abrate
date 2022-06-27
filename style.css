@@ -118,7 +118,9 @@ body {
 }
 /**header**/
 #header {
-    background-color: rgb(234, 146, 241); 
+    /* Aqui agregué gradientes para el color del header de una pagina CSS Gradient*/
+    background: rgb(208,0,161);
+    background: linear-gradient(90deg, rgba(208,0,161,1) 5%, rgba(217,110,221,1) 40%, rgba(231,255,178,1) 80%);
     width: 100vw; 
     height: 20vh;
     display: grid;
