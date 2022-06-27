@@ -155,7 +155,7 @@ body {
 }
 h1 {        
     text-decoration: none; 
-    color: rgb(138, 138, 155); 
+    color: lavender; 
     font-family: 'Brygada 1918', serif; 
     font-size: 35px; 
     font-style: italic; 
@@ -174,7 +174,7 @@ nav {
 }
 .menu_bar_a {
     text-decoration: none; 
-    color: rgb(138, 138, 155);  
+    color: lavender;  
     font-family: 'Brygada 1918', serif; 
     font-size: 2vw; 
     font-style: italic; 
