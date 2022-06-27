@@ -202,6 +202,7 @@ nav {
     background-color: lavender; 
     border: 2px black solid; 
     border-radius: 10%;
+    transition: all 0.5s;
 }
 .busqueda_button {
     font-family: 'Brygada 1918', serif; 
@@ -209,6 +210,8 @@ nav {
     font-style: italic; 
     background-color: lavender; 
     border: 2px black solid; 
+    transition: all 0.5s;
+    border-radius: 10%;
 }
 .busqueda_input {
     border: 2px black solid; 
@@ -220,9 +223,11 @@ nav {
 }
 .inscripcion:hover{
     background-color: cyan;
+    transform: scale(1.1);
 }
 .busqueda_button:hover {
     background-color: cyan;
+    transform: scale(1.1);
 }
 /**fin del header**/
 
