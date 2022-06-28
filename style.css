@@ -8,7 +8,7 @@
         color: cyan;
         font-size: 25px;
         font-stretch: expanded;
-        transition: all 0.6s;
+        transition: all 0.5s;
     }
 
 }
@@ -157,13 +157,13 @@ body {
     justify-content: center;
     align-items: center;  
 }
-h1 {        
+.animate__animated {        
     text-decoration: none; 
     color: lavender; 
     font-family: 'Brygada 1918', serif; 
     font-size: 35px; 
-    font-style: italic; 
-}
+    font-style: italic;
+} 
 /**barra de menu**/
 nav {
     grid-area: nav;
@@ -228,11 +228,11 @@ nav {
 }
 .inscripcion:hover{
     background-color: cyan;
-    transform: scale(1.1);
+    transform: scale(1.1) skew(10deg, 1deg);
 }
 .busqueda_button:hover {
     background-color: cyan;
-    transform: scale(1.1);
+    transform: scale(1.1) skew(10deg, 1deg);
 }
 /**fin del header**/
 
@@ -240,14 +240,11 @@ nav {
 /**main de index.html**/
 #main {
     width: 100vw;
-    background-color: rgb(244, 241, 248);
+    background-color: lavender;
     display: grid;
     grid-template-areas: "cuadros" "vidro" "porcelanas" "velas" "video";
     grid-template-rows: 1fr;
-    animation: cambioMain 10s ease infinite;
 }
-
-
 /**seccion de cuadros**/
 #cuadros_section {
     grid-area: cuadros;
@@ -277,6 +274,8 @@ nav {
 .cuadros_title:hover {
     animation: cambioTitles 5s ease infinite;
     color: magenta;
+    transform: skew(10deg, 1deg);
+    transition: all 0.5s;
 }
 @keyframes cambioTitles {
     0%{color: magenta;}
@@ -364,6 +363,8 @@ nav {
 .vidro_title:hover {
     color: magenta;
     animation: cambioTitles 5s ease infinite;
+    transform: skew(10deg, 1deg);
+    transition: all 0.5s;
 }
     /*imagenes*/ 
 .vidro_uno {
@@ -446,6 +447,8 @@ nav {
 .porce_title:hover {
     color: magenta;
     animation: cambioTitles 5s ease infinite;
+    transform: skew(10deg, 1deg);
+    transition: all 0.5s;
 }
     /*imagenes*/ 
 .porce_uno {
@@ -528,6 +531,8 @@ nav {
 .velas_title:hover {
     color: magenta;
     animation: cambioTitles 5s ease infinite;
+    transform: skew(10deg, 1deg);
+    transition: all 0.5s;
 }
     /*imagenes*/ 
 .velas_uno {
