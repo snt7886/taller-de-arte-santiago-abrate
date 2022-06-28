@@ -244,7 +244,9 @@ nav {
     display: grid;
     grid-template-areas: "cuadros" "vidro" "porcelanas" "velas" "video";
     grid-template-rows: 1fr;
+    animation: cambioMain 10s ease infinite;
 }
+
 
 /**seccion de cuadros**/
 #cuadros_section {
@@ -632,11 +634,15 @@ nav {
     flex-direction: column;
     align-items: center;
 }
+.mapafooter:hover {
+    transform: scale(1.20, 1);
+    transition: all ease 0.3s;
+}
 .direccion_text {
     text-decoration: none; 
     color: lavender; 
     font-family: 'Brygada 1918', serif; 
-    font-size: 15px; 
+    font-size: 15px;
 }
 .footer_redes {
     grid-area: redes;
@@ -661,10 +667,13 @@ nav {
     text-decoration: none; 
     color: lavender; 
     font-family: 'Brygada 1918', serif; 
-    font-size: 15px; 
+    font-size: 15px;
+    position: absolute; 
 }
 .redes_text:hover {
     color: cyan;
+    transform: translate(5px, 5px);
+    transition: all 0.5s;
 }
 .footer_contacto {
     grid-area: contacto;
@@ -690,9 +699,12 @@ nav {
     color: lavender; 
     font-family: 'Brygada 1918', serif; 
     font-size: 15px; 
+    position: absolute;
 }
 .contacto_text:hover {
     color: lime;
+    transform: translate(5px, 5px);
+    transition: all 0.5s;
 }
 /**fin del footer**/
 /**fin del CSS del index.html**/
