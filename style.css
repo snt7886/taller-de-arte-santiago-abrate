@@ -15,11 +15,11 @@
 
 @media only screen and (max-width: 480px) {
     body {
-        width: 100vw;
+        width: 100%;
     }
     /*header*/
     #header {
-        width: 100vw;
+        width: 100%;
         height: 15vh;
         position: sticky;
         top: 0;
@@ -32,7 +32,7 @@
         display: none;
     }
     .title {
-        width: 100vw;
+        width: 100%;
     }
     .buttons {
         display: flex;
@@ -46,56 +46,9 @@
         color: cyan;
     }
     #main {
-        width: 100vw;
+        width: 100%;
     }
-    .cuadros_uno {
-        margin-left: 60%;
-    }
-    .cuadros_dos {
-        display: none;
-    }
-    .cuadros_tres {
-        display: none;
-    }
-    .cuadros_cuatro {
-        display: none;
-    }
-    .vidro_uno {
-        margin-left: 60%;
-    }
-    .vidro_dos {
-        display: none;
-    }
-    .vidro_tres {
-        display: none;
-    }
-    .vidro_cuatro {
-        display: none;
-    }
-    .velas_uno {
-        margin-left: 60%;
-    }
-    .velas_dos {
-        display: none;
-    }
-    .velas_tres {
-        display: none;
-    }
-    .velas_cuatro {
-        display: none;
-    }
-    .porce_uno {
-        margin-left: 60%;
-    }
-    .porce_dos {
-        display: none;
-    }
-    .porce_tres {
-        display: none;
-    }
-    .porce_cuatro {
-        display: none;
-    }
+
     .video_yt {
         display: none;
     }
@@ -111,13 +64,12 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Oxygen';
-	line-height: 20px;
-    width: 90vw;
+    width: 100%;
 }
 /**header**/
 #header {
     /* Aqui agregué gradientes para el color del header de una pagina CSS Gradient*/
-    width: 100vw;
+    width: 100%;
     background: rgb(106,0,252); 
     height: 20vh;
     display: grid;
@@ -239,7 +191,7 @@ nav {
 
 /**main de index.html**/
 #main {
-    width: 100vw;
+    width: 100%;
     background-color: lavender;
     display: grid;
     grid-template-areas: "cuadros" "vidro" "porcelanas" "velas" "video";
@@ -247,14 +199,7 @@ nav {
 }
 /**seccion de cuadros**/
 #cuadros_section {
-    grid-area: cuadros;
     margin-top: 10px;
-    display: grid;
-    grid-template-areas: "cero cero cero cero"
-    "uno dos tres cuatro";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr;
-    gap: 5px;
 }
     /*titulo*/
 .cuadros_cero {
@@ -262,7 +207,7 @@ nav {
     grid-area: cero;
     justify-content: center;
     margin-top: 20px;
-    width: 100vw;
+    width: 100%;
 }
 .cuadros_title {
     text-decoration: none;
@@ -617,7 +562,7 @@ nav {
 /**footer**/
 #footer {
     background-color: rgb(232, 95, 241); 
-    width: 100vw; 
+    width: 100%; 
     height: 25vh;
     padding-top: 10px;
     border-top: 1px solid black;

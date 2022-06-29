@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de Eugenia</title>
+
     <!-- link al css-->
     <link rel="stylesheet" href="style.css">
+
+    <!-- link a Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <!-- link al font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap" rel="stylesheet"> 
+
     <!-- link a aos-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- link a animate.style css-->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -52,44 +59,31 @@
 
     <!-- sección main -->
     <main id="main">
-        <!-- seccion de cuadros -->
+       <!-- sección cuadros--> 
         <section id="cuadros_section">
-            <div class="cuadros_cero "><a href="pages/tienda.html" target="_blank" class="cuadros_title"><h2>Cuadros</h2></a></div>
-            <div class="cuadros_uno"><a href="pages/tienda.html" target="_blank"><img src="imagenes/cuadro_1.jpeg" alt="" class="cuadros_img"></a>$ ****,** </div>
-            <div class="cuadros_dos"><a href="pages/tienda.html" target="_blank"><img src="imagenes/cuadro_2.jpeg" alt="" class="cuadros_img"></a>$ ****,**</div>
-            <div class="cuadros_tres"><a href="pages/tienda.html" target="_blank"><img src="imagenes/cuadro_3.jpeg" alt="" class="cuadros_img"></a>$ ****,**</div>
-            <div class="cuadros_cuatro"><a href="pages/tienda.html" target="_blank"><img src="imagenes/cuadro_4.jpeg" alt="" class="cuadros_img"></a>$ ****,**</div> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12"><div class="cuadros_cero "><a href="pages/tienda.html" target="_blank" class="cuadros_title"><h2>Cuadros</h2></a></div></div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="cuadros_uno"><a href="pages/tienda.html" target="_blank"><img src="imagenes/cuadro_1.jpeg" alt="" class="cuadros_img"></a>$ ****,** </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="cuadros_dos"><a href="pages/tienda.html" target="_blank"><img src="imagenes/cuadro_2.jpeg" alt="" class="cuadros_img"></a>$ ****,**</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="cuadros_tres"><a href="pages/tienda.html" target="_blank"><img src="imagenes/cuadro_3.jpeg" alt="" class="cuadros_img"></a>$ ****,**</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="cuadros_cuatro"><a href="pages/tienda.html" target="_blank"><img src="imagenes/cuadro_4.jpeg" alt="" class="cuadros_img"></a>$ ****,**</div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- seccion de vidrofusion -->
-        <section id="vidro_section">
-            <div class="vidro_cero"><a href="pages/tienda.html" target="_blank" class="vidro_title"><h2>Vidrofusión</h2></a></div>
-            <div class="vidro_uno"><a href="pages/tienda.html" target="_blank"><img src="imagenes/vid_1.jpeg" alt="" class="vidro_img"></a>$ ****,** </div>
-            <div class="vidro_dos"><a href="pages/tienda.html" target="_blank"><img src="imagenes/vid_2.jpeg" alt="" class="vidro_img"></a>$ ****,**</div>
-            <div class="vidro_tres"><a href="pages/tienda.html" target="_blank"><img src="imagenes/vid_3.jpeg" alt="" class="vidro_img"></a>$ ****,**</div>
-            <div class="vidro_cuatro"><a href="pages/tienda.html" target="_blank"><img src="imagenes/vid_4.jpeg" alt="" class="vidro_img"></a>$ ****,**</div> 
-        </section>
-        <!-- seccion de porcelanas -->
-        <section id="porce_section">
-            <div class="porce_cero"><a href="pages/tienda.html" target="_blank" class="porce_title"><h2>Porcelanas</h2></a></div>
-            <div class="porce_uno"><a href="pages/tienda.html" target="_blank"><img src="imagenes/porcelanas_1.jpeg" alt="" class="porce_img"></a>$ ****,** </div>              
-            <div class="porce_dos"><a href="pages/tienda.html" target="_blank"><img src="imagenes/porcelanas_2.jpeg" alt="" class="porce_img"></a>$ ****,**</div>
-            <div class="porce_tres"><a href="pages/tienda.html" target="_blank"><img src="imagenes/porcelanas_3.jpeg" alt="" class="porce_img"></a>$ ****,**</div>
-            <div class="porce_cuatro"><a href="pages/tienda.html" target="_blank"><img src="imagenes/porcelanas_4.jpeg" alt="" class="porce_img"></a>$ ****,**</div> 
-        </section>
-        <!-- seccion de velas -->
-        <section id="velas_section">
-            <div class="velas_cero"><a href="pages/tienda.html" target="_blank" class="velas_title"><h2>Velas</h2></a></div>
-            <div class="velas_uno"><a href="pages/tienda.html" target="_blank"><img src="imagenes/velas_1.jpeg" alt="" class="velas_img"></a>$ ****,** </div>
-            <div class="velas_dos"><a href="pages/tienda.html" target="_blank"><img src="imagenes/velas_2.jpeg" alt="" class="velas_img"></a>$ ****,**</div>
-            <div class="velas_tres"><a href="pages/tienda.html" target="_blank"><img src="imagenes/velas_3.jpeg" alt="" class="velas_img"></a>$ ****,**</div> 
-            <div class="velas_cuatro"><a href="pages/tienda.html" target="_blank"><img src="imagenes/velas_4.jpeg" alt="" class="velas_img"></a>$ ****,**</div>
-        </section>
-        <!-- video de presentacion --> 
-        <div id="video" data-aos="flip-left">
-            <div class="video_title">"Titulo"</div>
-            <!-- es un video provisorio, aqui debe ir una presentación -->
-            <iframe class="video_yt" width="560" height="315" src="https://www.youtube.com/embed/_nBE6Vmsozs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
     </main>
     <!-- fin del main -->
 
@@ -120,5 +114,7 @@
     <script>
       AOS.init();
     </script>
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
