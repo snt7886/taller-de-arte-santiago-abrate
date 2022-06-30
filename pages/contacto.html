@@ -18,34 +18,46 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- link a animate.style css-->
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+        <!-- link a Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
     </head>
 <body>
     <!-- header -->
     <header id="header">
-        <!-- logo -->   
-        <div class="logo">
-            <a href="../index.html"><img src="../imagenes/logo.jpg" alt="" class="img_logo"></a>
-        </div>
-        <!-- encabezado -->
-        <div class="title"><h1 class="animate__animated animate__fadeIn">Taller de Eugenia</h1></div>
-        <!-- boton de inscripción y barra de busqueda -->   
-        <div class="header_buttons">
-            <ul class="buttons">
-                <li><button class="inscripcion">Inscribirse</button></li>
-                <li><input type="search" class="busqueda_input"></li>
-                <li><button class="busqueda_button">Buscar</button></li>
-            </ul>
-        </div>         
-        <!-- barra de menu --> 
-        <nav>       
-            <ul class="menu_bar">
-                <li class="menu_bar_item"><a href="../index.html" class="menu_bar_a">Home</a></li>
-                <li class="menu_bar_item"><a href="../pages/curso.html" target="_blank" class="menu_bar_a">Cursos y seminarios</a></li>
-                <li class="menu_bar_item"><a href="../pages/tienda.html" target="_blank" class="menu_bar_a">Tienda</a></li>
-                <li class="menu_bar_item"><a href="../pages/bio.html" class="menu_bar_a">Biografía</a></li>
-                <li class="menu_bar_item"><a href="../pages/contacto.html" class="menu_bar_a">Contacto</a></li>
-            </ul>
-        </nav>                      
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex justify-content-start" href="../index.html">
+                <img class="rounded-circle" src="../imagenes/logo.jpg" alt="" width="45" height="36" class="d-inline-block align-text-top">
+               <h1 class="animate__animated animate__fadeIn ps-3 pt-1">Taller de Eugenia</h1>
+              </a>
+            </div>
+            <div class="container-fluid nav_fonts">
+                <a class="navbar-brand text-light" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="../pages/curso.html">Curso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../pages/bio.html">Biografia</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-light" type="submit">Search</button>
+                  </form>
+                </div>
+            </div>            
+          </nav>                     
     </header>
     <!-- fin del header-->
 
@@ -84,5 +96,7 @@
      </footer>
      <!-- fin del footer -->
     <!-- fin de contacto.html -->
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
 </body>
 </html>

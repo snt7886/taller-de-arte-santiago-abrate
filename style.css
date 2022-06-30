@@ -34,11 +34,6 @@
     .title {
         width: 100%;
     }
-    .buttons {
-        display: flex;
-        flex-direction: row;
-        margin-top: 13vh;
-    }
     nav {
         margin-top: 6px;
     }
@@ -47,13 +42,6 @@
     }
     #main {
         width: 100%;
-    }
-
-    .video_yt {
-        display: none;
-    }
-    .video_title {
-        display: none;
     }
 }
 
@@ -71,13 +59,9 @@ body {
     /* Aqui agregué gradientes para el color del header de una pagina CSS Gradient*/
     width: 100%;
     background: rgb(106,0,252); 
-    height: 20vh;
-    display: grid;
-    grid-template-areas: "logo title title buttons"
-    "nav nav nav nav";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
+    height: 20%;
     padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid black;
     animation: cambioHeader 10s ease infinite;
 }
@@ -88,103 +72,18 @@ body {
     60%{background-color: rgb(255,67,96);}
     80%{background-color: rgb(255,5,157);}
 } 
-/**logo**/
-.logo {
-    grid-area: logo;
-    height: 100%;
-    margin: auto;
-}
-.img_logo {
-    border-radius: 50%;
-    height: 10vh;
-    width: 10vw;
-    display: block;
-    margin: auto;
-}
 /**encabezado**/
-.title {
-    grid-area: title;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-}
 .animate__animated {        
     text-decoration: none; 
     color: lavender; 
     font-family: 'Brygada 1918', serif; 
-    font-size: 35px; 
     font-style: italic;
+    font-size: 20px;
 } 
 /**barra de menu**/
-nav {
-    grid-area: nav;
-    height: 90%;
-}
-.menu_bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    padding-top: 20px;
-}
-.menu_bar_a {
-    text-decoration: none; 
-    color: lavender;  
+.nav_fonts {
     font-family: 'Brygada 1918', serif; 
-    font-size: 2vw; 
-    font-style: italic; 
-}
-/**botones del header**/
-.header_buttons {
-    grid-area: buttons;
-    padding: 0 10px;
-    line-height: 110px;
-    margin-right: 25px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-.buttons {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    column-gap: 2px;
-}
-.inscripcion {
-    font-family: 'Brygada 1918', serif; 
-    font-size: 15px; 
-    font-style: italic; 
-    background-color: lavender; 
-    border: 2px black solid; 
-    border-radius: 10%;
-    transition: all 0.5s;
-}
-.busqueda_button {
-    font-family: 'Brygada 1918', serif; 
-    font-size: 15px; 
-    font-style: italic; 
-    background-color: lavender; 
-    border: 2px black solid; 
-    transition: all 0.5s;
-    border-radius: 10%;
-}
-.busqueda_input {
-    border: 2px black solid; 
-    background-color: lavender; 
-    color: rgba(0, 0, 0, 0.712); 
-    font-family: 'Brygada 1918', serif; 
-    font-size: 15px;
-    border-radius: 10%; 
-}
-.inscripcion:hover{
-    background-color: cyan;
-    transform: scale(1.1) skew(10deg, 1deg);
-}
-.busqueda_button:hover {
-    background-color: cyan;
-    transform: scale(1.1) skew(10deg, 1deg);
+    font-style: italic;
 }
 /**fin del header**/
 
@@ -193,9 +92,8 @@ nav {
 #main {
     width: 100%;
     background-color: lavender;
-    display: grid;
-    grid-template-areas: "cuadros" "vidro" "porcelanas" "velas" "video";
-    grid-template-rows: 1fr;
+    padding-top: 10px;
+    padding-bottom: 100px;
 }
 /**seccion de cuadros**/
 #cuadros_section {
@@ -204,7 +102,6 @@ nav {
     /*titulo*/
 .cuadros_cero {
     display: flex;
-    grid-area: cero;
     justify-content: center;
     margin-top: 20px;
     width: 100%;
@@ -229,7 +126,6 @@ nav {
 }  
     /*imagenes*/ 
 .cuadros_uno {
-    grid-area: uno;
     border: 1px solid black;
     border-radius: 10%;
     padding: 10px;
@@ -240,7 +136,6 @@ nav {
     width: fit-content;
 }
 .cuadros_dos {
-    grid-area: dos;
     border: 1px solid black;
     border-radius: 10%;
     padding: 10px;
@@ -251,7 +146,6 @@ nav {
     width: fit-content; 
 }
 .cuadros_tres {
-    grid-area: tres;
     border: 1px solid black;
     border-radius: 10%;
     padding: 10px;
@@ -262,7 +156,6 @@ nav {
     width: fit-content; 
 }
 .cuadros_cuatro {
-    grid-area: cuatro;
     border: 1px solid black;
     border-radius: 10%;
     padding: 10px;
@@ -281,22 +174,14 @@ nav {
 
 /**seccion de vidrofusion**/
 #vidro_section {
-    grid-area: vidro;
     margin-top: 10px;
-    display: grid;
-    grid-template-areas: "cero cero cero ero"
-    "uno dos tres cuatro";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr;
-    gap: 2px;
 }
     /*titulo*/
 .vidro_cero {
     display: flex;
-    grid-area: cero;
     justify-content: center;
     margin-top: 20px;
-    width: 100vw;
+    width: 100%;
 }
 .vidro_title {
     text-decoration: none;
@@ -346,7 +231,6 @@ nav {
     width: fit-content; 
 }
 .vidro_cuatro {
-    grid-area: cuatro;
     border: 1px solid black;
     border-radius: 10%;
     padding: 10px;
@@ -365,22 +249,14 @@ nav {
 
 /**seccion de porcelanas**/
 #porce_section {
-    grid-area: porcelanas;
     margin-top: 10px;
-    display: grid;
-    grid-template-areas: "cero cero cero ero"
-    "uno dos tres cuatro";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr;
-    gap: 2px;
 }
     /*titulo*/
 .porce_cero {
     display: flex;
-    grid-area: cero;
     justify-content: center;
     margin-top: 20px;
-    width: 100vw;
+    width: 100%;
 }
 .porce_title {
     text-decoration: none;
@@ -449,22 +325,14 @@ nav {
 
 /**seccion de velas**/
 #velas_section {
-    grid-area: velas;
     margin-top: 10px;
-    display: grid;
-    grid-template-areas: "cero cero cero ero"
-    "uno dos tres cuatro";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr;
-    gap: 2px;
 }
     /*titulo*/
 .velas_cero {
     display: flex;
-    grid-area: cero;
     justify-content: center;
     margin-top: 20px;
-    width: 100vw;
+    width: 100%;
 }
 .velas_title {
     text-decoration: none;
@@ -530,40 +398,14 @@ nav {
     border-radius: 10%;
     border: 2px dashed rgb(39, 34, 25);
 }
-   
-/*video de youtube*/
-#video {
-    grid-area: video;
-    margin: 50px 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 25%;
-    background-color: orangered;
-    padding: 10px 0px;
-    justify-content: center;
-}
-.video_title {
-    text-decoration: none; 
-    color: rgb(57, 57, 61); 
-    font-family: 'Brygada 1918', serif; 
-    font-size: 35px; 
-    font-style: italic; 
-}
-.video_yt {
-    width: 50%;
-    margin: 10px 50vh;
-    border: solid rgb(40, 40, 40) 20px;
-    border-radius: 5%;
-}
+
 /*fin del main index.html*/
 
 /**footer**/
 #footer {
     background-color: rgb(232, 95, 241); 
     width: 100%; 
-    height: 25vh;
+    height: 30vh;
     padding-top: 10px;
     border-top: 1px solid black;
     display: grid;
@@ -662,75 +504,25 @@ nav {
 
 /** CSS de tienda.html**/
 /**main tienda.html**/
-    /**buscador de productos**/
-#productos {
-    font-family: 'Brygada 1918', serif;
-    color: rgb(0, 119, 119);
-    font-size: 30px;
-    margin: 30px 50% 30px 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-right: 20px;
-    background-color: rgba(165, 236, 93, 0.74);
-    background-size: 100%;
-    border-radius: 80%;
-    height: 100%;
-    padding: 50px;
+main {
     width: 100%;
-} 
-.productos_item:hover {
-    font-size: 35px;
-    color: aqua;
+    background-color: lavender;
+    padding-top: 10px;
+    padding-bottom: 100px;
 }
-    /**imagen, titulo y descripcion del producto**/
-.main_tienda {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: magenta;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.tienda_imagen {
-    width: 300px;
-    height: 300px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    border: solid black 2px;
-    padding: 5px;
-    background-color: rgba(165, 236, 93, 0.74);    
-}
-.tienda_titulo {
-    margin-top: 115px;
-    margin-left: 100px;
-    font-size: 30px;
+.tienda_title {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
     font-family: 'Brygada 1918', serif;
-    margin-right: 20px;
+    font-style: italic;
 }
-.tienda_descripcion {
-    margin-top: 50px;
-    margin-left: 100px;
-    font-size: 30px;
+.description {
+    text-decoration: none;
+    color: rgb(45, 45, 54);
+    font-size: 20px;
     font-family: 'Brygada 1918', serif;
-    margin-right: 20px;
-}
-#buy {
-    margin-top: 400px;
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-right: 10px;
-    background-color: aqua;
-}
-#buy_carro {
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-left: 110px;
-    margin-right: 10px;
-    padding: 5px;
-    background-color: aqua;  
+    font-style: italic;
 }
 /**fin de main tienda.html**/
 /**fin de tienda.html**/

@@ -27,43 +27,53 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <div class="container">
     <!-- header -->
     <header id="header">
-        <!-- logo -->   
-        <div class="logo">
-            <a href="index.html"><img src="imagenes/logo.jpg" alt="" class="img_logo"></a>
-        </div>
-        <!-- encabezado -->
-        <div class="title"><h1 class="animate__animated animate__fadeIn">Taller de Eugenia</h1></div>
-        <!-- boton de inscripción y barra de busqueda -->   
-        <div class="header_buttons">
-            <ul class="buttons">
-                <li><button class="inscripcion">Inscribirse</button></li>
-                <li><input type="search" class="busqueda_input"></li>
-                <li><button class="busqueda_button">Buscar</button></li>
-            </ul>
-        </div>         
-        <!-- barra de menu --> 
-        <nav>       
-            <ul class="menu_bar">
-                <li class="menu_bar_item"><a href="index.html" class="menu_bar_a">Home</a></li>
-                <li class="menu_bar_item"><a href="pages/curso.html" target="_blank" class="menu_bar_a">Cursos y seminarios</a></li>
-                <li class="menu_bar_item"><a href="pages/tienda.html" target="_blank" class="menu_bar_a">Tienda</a></li>
-                <li class="menu_bar_item"><a href="pages/bio.html" class="menu_bar_a">Biografía</a></li>
-                <li class="menu_bar_item"><a href="pages/contacto.html" class="menu_bar_a">Contacto</a></li>
-            </ul>
-        </nav>                      
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex justify-content-start" href="index.html">
+                <img class="rounded-circle" src="imagenes/logo.jpg" alt="" width="45" height="36" class="d-inline-block align-text-top">
+               <h1 class="animate__animated animate__fadeIn ps-3 pt-1">Taller de Eugenia</h1>
+              </a>
+            </div>
+            <div class="container-fluid nav_fonts">
+                <a class="navbar-brand text-light" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="pages/curso.html">Curso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="pages/bio.html">Biografia</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-light" type="submit">Search</button>
+                  </form>
+                </div>
+            </div>            
+          </nav>                     
     </header>
     <!-- fin del header-->
 
     <!-- sección main -->
+    <!-- utilice bootstrap para hacer mis secciones del main aplicables a distintos tamaños de pantalla utilizando el grid system de bootstrap-->
     <main id="main">
        <!-- sección cuadros--> 
         <section id="cuadros_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12"><div class="cuadros_cero "><a href="pages/tienda.html" target="_blank" class="cuadros_title"><h2>Cuadros</h2></a></div></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12"><div class="cuadros_cero"><a href="pages/tienda.html" target="_blank" class="cuadros_title"><h2>Cuadros</h2></a></div></div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="cuadros_uno"><a href="pages/tienda.html" target="_blank"><img src="imagenes/cuadro_1.jpeg" alt="" class="cuadros_img"></a>$ ****,** </div>
                     </div>
@@ -79,11 +89,69 @@
                 </div>
             </div>
         </section>
-
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <!-- sección porcelanas-->
+        <section id="porce_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12"><div class="porce_cero"><a href="pages/tienda.html" target="_blank" class="porce_title"><h2>Porcelanas</h2></a></div></div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="porce_uno"><a href="pages/tienda.html" target="_blank"><img src="imagenes/porcelanas_1.jpeg" alt="" class="porce_img"></a>$ ****,** </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="porce_dos"><a href="pages/tienda.html" target="_blank"><img src="imagenes/porcelanas_2.jpeg" alt="" class="porce_img"></a>$ ****,**</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="porce_tres"><a href="pages/tienda.html" target="_blank"><img src="imagenes/porcelanas_3.jpeg" alt="" class="porce_img"></a>$ ****,**</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="porce_cuatro"><a href="pages/tienda.html" target="_blank"><img src="imagenes/porcelanas_4.jpeg" alt="" class="porce_img"></a>$ ****,**</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sección velas-->
+        <section id="velas_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12"><div class="velas_cero"><a href="pages/tienda.html" target="_blank" class="velas_title"><h2>Velas</h2></a></div></div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="velas_uno"><a href="pages/tienda.html" target="_blank"><img src="imagenes/velas_1.jpeg" alt="" class="velas_img"></a>$ ****,** </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="velas_dos"><a href="pages/tienda.html" target="_blank"><img src="imagenes/velas_2.jpeg" alt="" class="velas_img"></a>$ ****,**</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="velas_tres"><a href="pages/tienda.html" target="_blank"><img src="imagenes/velas_3.jpeg" alt="" class="velas_img"></a>$ ****,**</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="velas_cuatro"><a href="pages/tienda.html" target="_blank"><img src="imagenes/velas_4.jpeg" alt="" class="velas_img"></a>$ ****,**</div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+        </section>
+        <!-- sección vidrofusion-->
+        <section id="vidro_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12"><div class="vidro_cero"><a href="pages/tienda.html" target="_blank" class="vidro_title"><h2>Vidrofusión</h2></a></div></div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="vidro_uno"><a href="pages/tienda.html" target="_blank"><img src="imagenes/vid_1.jpeg" alt="" class="vidro_img"></a>$ ****,** </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="vidro_dos"><a href="pages/tienda.html" target="_blank"><img src="imagenes/vid_2.jpeg" alt="" class="vidro_img"></a>$ ****,**</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="vidro_tres"><a href="pages/tienda.html" target="_blank"><img src="imagenes/vid_3.jpeg" alt="" class="vidro_img"></a>$ ****,**</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="vidro_cuatro"><a href="pages/tienda.html" target="_blank"><img src="imagenes/vid_4.jpeg" alt="" class="vidro_img"></a>$ ****,**</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- fin del main -->
 
@@ -108,7 +176,6 @@
        </div>
     </footer>
     <!-- fin del footer -->
-    </div>
     <!-- fin de index.html-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

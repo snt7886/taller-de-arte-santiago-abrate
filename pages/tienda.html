@@ -16,62 +16,101 @@
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap" rel="stylesheet"> 
     <!-- link a aos-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- link a Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <!-- link a animate.style css-->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <!-- header -->
     <header id="header">
-        <!-- logo -->   
-        <div class="logo">
-            <a href="../index.html"><img src="../imagenes/logo.jpg" alt="" class="img_logo"></a>
-        </div>
-        <!-- encabezado -->
-        <div class="title"><h1 class="animate__animated animate__fadeIn">Taller de Eugenia</h1></div>
-        <!-- boton de inscripción y barra de busqueda -->   
-        <div class="header_buttons">
-            <ul class="buttons">
-                <li><button class="inscripcion">Inscribirse</button></li>
-                <li><input type="search" class="busqueda_input"></li>
-                <li><button class="busqueda_button">Buscar</button></li>
-            </ul>
-        </div>         
-        <!-- barra de menu --> 
-        <nav>       
-            <ul class="menu_bar">
-                <li class="menu_bar_item"><a href="../index.html" class="menu_bar_a">Home</a></li>
-                <li class="menu_bar_item"><a href="../pages/curso.html" target="_blank" class="menu_bar_a">Cursos y seminarios</a></li>
-                <li class="menu_bar_item"><a href="../pages/tienda.html" target="_blank" class="menu_bar_a">Tienda</a></li>
-                <li class="menu_bar_item"><a href="../pages/bio.html" class="menu_bar_a">Biografía</a></li>
-                <li class="menu_bar_item"><a href="../pages/contacto.html" class="menu_bar_a">Contacto</a></li>
-            </ul>
-        </nav>                      
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex justify-content-start" href="../index.html">
+                <img class="rounded-circle" src="../imagenes/logo.jpg" alt="" width="45" height="36" class="d-inline-block align-text-top">
+               <h1 class="animate__animated animate__fadeIn ps-3 pt-1">Taller de Eugenia</h1>
+              </a>
+            </div>
+            <div class="container-fluid nav_fonts">
+                <a class="navbar-brand text-light" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="../pages/curso.html">Curso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../pages/bio.html">Biografia</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-light" type="submit">Search</button>
+                  </form>
+                </div>
+            </div>            
+          </nav>                     
     </header>
-    <!-- fin del header-->>
+    <!-- fin del header-->
 
     <!-- main -->
 
     <main>
-            <!-- para la tienda decidi poner un dropdown que contenga una lista desordenada con los productos para vender, en cada producto aparecera una imagen de este, el precio, el nombre y la descripción y la opcion de añadirlo al carro -->
-            <ul id="productos">
-                <li class="productos_item">Cuadros</li>
-                <li class="productos_item">Porcelanas</li>
-                <li class="productos_item">Velas</li>
-                <li class="productos_item">Vidrofusión</li>
-            </ul>
-            <!--imagenes especificas del producto elegido -->
-            <!--utilice esta imagen como provisoria-->
-            <div class="main_tienda">
-                <img src="../imagenes/cuadro_1.jpeg" alt="" class="tienda_imagen">
-                <div>
-                    <h3 class="tienda_titulo">Nombre del producto</h3>
-                    <p class="tienda_descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam alias corrupti obcaecati, fugit a nesciunt delectus laborum natus! Quisquam vero aspernatur officiis blanditiis aut, doloribus perspiciatis consequuntur fugiat eveniet tempore!</p>  
-                </div>
-                <div>
-                    <button id="buy"><p>añadir al carro</p></button>
-                    <button id="buy_carro"><img src="../imagenes/carro.png" alt=""></button>
-                </div>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center mt-3">
+              <h2 class="tienda_title">Productos</h2>
             </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="d-flex justify-content-center col-lg-6 col-md-12 col-sm-12">
+              <div id="carouselExampleIndicators" class="carousel slide w-50" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded">
+                  <div class="carousel-item active">
+                    <img src="../imagenes/cuadro_1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item active">
+                    <img src="../imagenes/velas_1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item active">
+                    <img src="../imagenes/porcelanas_1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, architecto incidunt rem repellendus omnis sint eius. Sint, quod hic eum cupiditate quasi nihil dolore, iste sapiente perspiciatis dolor repudiandae? Eveniet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quod pariatur cumque perferendis quae distinctio minus, voluptate tempore magnam, aspernatur officiis id labore ipsum laudantium optio? Totam architecto cupiditate doloribus.</p>
+                <a class="btn btn-primary" href="#" role="button">Comprar</a>	
+            </div>
+          </div>
+        </div>
+      </section>
     </main>        
     <!-- fin del main -->
 
@@ -97,5 +136,7 @@
      </footer>
      <!-- fin del footer -->
     <!-- fin de tienda.html -->
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
