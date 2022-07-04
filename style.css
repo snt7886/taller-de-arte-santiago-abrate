@@ -51,7 +51,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Oxygen';
+    font-family: 'Brygada 1918', serif; 
     width: 100%;
 }
 /**header**/
@@ -503,13 +503,6 @@ body {
 
 
 /** CSS de tienda.html**/
-/**main tienda.html**/
-main {
-    width: 100%;
-    background-color: lavender;
-    padding-top: 10px;
-    padding-bottom: 100px;
-}
 .tienda_title {
     text-decoration: none;
     color: rgb(45, 45, 54);
@@ -524,172 +517,57 @@ main {
     font-family: 'Brygada 1918', serif;
     font-style: italic;
 }
-/**fin de main tienda.html**/
 /**fin de tienda.html**/
 
-/**curso.html**/
-/**main curso.html**/
-
-/** fin main de curso.html**/
-/** fin del CSS de curso.html **/
-
-
 /** contacto.html **/
-/** main **/
-@media only screen and (min-width: 481px) {
-#formulario {
-    height: 80vh;
+.contacto_main {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    height: 100vh;
+    padding-top: 100px;
+}
+.formulario {
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid black;
+    border-radius: 15%;
+    padding: 30px 15px;
+    margin: auto;
+}
+.form_contenedor {
+    width: 100%;
     display: grid;
-    grid-template-areas: "funo funo funo"
-    "fcuatro fcuatro fdos"
-    "fcuatro fcuatro ftres"
-    "fcuatro fcuatro fcinco";
-    grid-template-columns: repeat(3, 1fr);
-
+    gap: 1em;
+    grid-auto-columns: 100%;
 }
-.formulario_uno {
-    grid-area: funo;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
+.form_titulo {
+    text-align: center;
+    font-size: 30px;
 }
-.formulario_titulo {
-    text-decoration: none;
-    font-family: 'Brygada 1918', serif; 
-    font-size: 50px; 
-}
-.formulario_dos {
-    grid-area: fdos;
-}
-#nombres {
-    padding: 5px 150px 5px 5px;
-    color: black;
+.form_input {
+    font-family: 'Brygada 1918', serif;
     font-size: 15px;
-    background-color: aliceblue;
-    border: 1.5px solid black;
+    padding: .8em 1em;
 }
-.formulario_tres {
-    grid-area: ftres;
+.mensaje {
+    resize: none;
+    padding: 1.8em 1em;
 }
-#correo {
-    padding: 5px 150px 5px 5px;
-    color: black;
-    font-size: 15px;
-    background-color: aliceblue;
-    border: 1.5px solid black;
+.form_enviar {
+    font-family: 'Brygada 1918', serif;
+    font-size: 1rem;
+    background-color: cyan;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0; 
+    border-radius: .2em;
+    font-weight: 400;
 }
-.formulario_cuatro {
-    grid-area: fcuatro;
-    margin-left: 50%;
-}
-#comentario {
-    color: black;
-    font-size: 15px;
-    background-color: aliceblue;
-    border: 1.5px solid black;
-}
-.formulario_cinco {
-    grid-area: fcinco;
-}
-#enviar {
-    padding: 5px 10px 5px 5px;
-    color: black;
-    font-size: 15px;
-    background-color: aliceblue;
-    border: 1.5px solid black;
-    background-color: magenta;
-}
-}
-@media only screen and (max-width: 480px) {
-    #formulario {
-        height: 100vh;
-        display: grid;
-        grid-template-areas: "funo funo funo"
-        "fdos fdos fdos"
-        "ftres ftres ftres"
-        "fcuatro fcuatro fcuatro"
-        "fcinco fcinco fcinco";
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 100px);
-        gap: 10px;
+@media only screen and (max-width: 450px) {
+    .formulario {
+        padding: 30px 10px;
     }
-    .formulario_uno {
-        grid-area: funo;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 50px;
-    }
-    .formulario_titulo {
-        text-decoration: none;
-        font-family: 'Brygada 1918', serif; 
-        font-size: 25px; 
-    }
-    .formulario_dos {
-        grid-area: fdos;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: fit-content;
-    }
-    #nombres {
-        color: black;
-        font-size: 15px;
-        background-color: aliceblue;
-        border: 1.5px solid black;
-        width: 80vw;
-        height: 5vh;
-    }
-    .formulario_tres {
-        grid-area: ftres;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: fit-content;
-    }
-    #correo {
-        color: black;
-        font-size: 15px;
-        background-color: aliceblue;
-        border: 1.5px solid black;
-        width: 80vw;
-        height: 5vh;
-    }
-    .formulario_cuatro {
-        grid-area: fcuatro;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    #comentario {
-        color: black;
-        font-size: 15px;
-        background-color: aliceblue;
-        border: 1.5px solid black;
-        width: 80vw;
-        height: 20vh;
-    }
-    .formulario_cinco {
-        grid-area: fcinco;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: fit-content;
-        margin-top: 20px;
-    }
-    #enviar {
-        padding: 5px 10px 5px 5px;
-        color: black;
-        font-size: 15px;
-        background-color: aliceblue;
-        border: 1.5px solid black;
-        background-color: magenta;
-        border-radius: 20%;
-    }
-    }
-
-
+} 
 /**fin contacto.html**/
 
 /**bio.html**/

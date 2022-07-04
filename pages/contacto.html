@@ -62,15 +62,17 @@
     <!-- fin del header-->
 
     <!-- main -->
-    <main>
+    <main class="contacto_main">
     <!-- formulario -->    
-        <section id="formulario">
-            <div class="formulario_uno"><h3 class="formulario_titulo">Dejanos un comentario</h3></div>
-            <div class="formulario_dos"><input type="text" name="nombre" id="nombres" placeholder="Nombre y Apellido"></div>
-            <div class="formulario_tres"> <input type="email" name="correo" id="correo" placeholder="Ingrese su correo"></div>
-            <div class="formulario_cuatro"> <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dejanos un comentario"></textarea></div>
-            <div class="formulario_cinco"><button id="enviar">Enviar</button></div>
-        </section>
+      <form class="formulario">
+        <div class="form_contenedor">
+          <h2 class="form_titulo">Contáctanos</h2>
+          <input type="text" class="form_input" placeholder="Nombre:">
+          <input type="email" class="form_input" placeholder="Email:">
+          <textarea class="form_input mensaje" placeholder="Mensaje:"></textarea>
+          <input type="submit" value="Enviar" class="form_enviar">
+        </div>
+      </form>
     </main>
     <!-- fin del main -->
 
