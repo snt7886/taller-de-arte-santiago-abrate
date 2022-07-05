@@ -506,6 +506,7 @@ body {
 .main_tienda {
     height: 100vh;
     display: grid;
+    
 }
 .section_tienda {
     margin: auto;
