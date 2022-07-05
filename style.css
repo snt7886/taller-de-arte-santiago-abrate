@@ -503,6 +503,13 @@ body {
 
 
 /** CSS de tienda.html**/
+.main_tienda {
+    height: 100vh;
+    display: grid;
+}
+.section_tienda {
+    margin: auto;
+}
 .tienda_title {
     text-decoration: none;
     color: rgb(45, 45, 54);
