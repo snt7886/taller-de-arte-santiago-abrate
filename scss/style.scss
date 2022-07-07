@@ -16,13 +16,16 @@ body {
     padding-top: 10px;
     padding-bottom: 100px;
 }
+/*Components*/
 @import "components/header";
 @import "components/cuadros";
 @import "components/vidrofusion";
 @import "components/porcelanas";
 @import "components/velas";
 @import "components/footer";
-
+/*Base*/
+@import "base/listas";
+@import "base/variables";
 
 
 

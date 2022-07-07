@@ -1,45 +1,47 @@
+@import "../base/listas";
+@import "../base/variables";
 /**seccion de porcelanas**/
 #porce_section {
-    margin-top: 10px;
+    margin-top: nth($pad-marg, 1);
     .container .row .cero .porce_cero {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
-        width: 100%;
+        margin-top: nth($pad-marg, 2);
+        width: nth($width, 3);
         .porce_title {
             text-decoration: none;
-            color: rgb(45, 45, 54);
-            font-size: 20px;
-            font-family: 'Brygada 1918', serif;
-            font-style: italic;
+            color: nth($color, 5);
+            font-size:nth($font-size, 2);
+            font-family: $font-fam;
+            font-style: $font-stl;
             &:hover {
                 animation: cambioTitles 5s ease infinite;
-                color: magenta;
+                color: nth($color, 2);
                 transform: skew(10deg, 1deg);
                 transition: all 0.5s;
                 @keyframes cambioTitles {
-                    0%{color: magenta;}
-                    33% {color: violet;}
-                    66% {color: pink;}
+                    0%{color: nth($color, 2);}
+                    33% {color: nth($color, 3);}
+                    66% {color: nth($color, 4);}
                 }  
             }
 
         }
     }
     .container .row div[ class~="col-lg-3"] div[ class] {
-        border: 1px solid black;
-        border-radius: 10%;
-        padding: 10px;
-        background-color: beige;
-        color: rgba(0, 0, 0, 0.712); 
-        font-family: 'Brygada 1918', serif; 
-        font-size: 20px;
-        width: fit-content;
+        border: nth($border, 1);
+        border-radius: nth($border-r, 1);
+        padding: nth($pad-marg, 1);
+        background-color: $bg-c;
+        color: nth($color, 6); 
+        font-family: $font-fam; 
+        font-size: nth($font-size, 2);
+        width: nth($width, 1);
         .porce_img {
-            height: 200px;
-            width: 200px;
-            border-radius: 10%;
-            border: 2px dashed rgb(39, 34, 25);
+            height: nth($height, 5);
+            width: nth($width, 4);
+            border-radius: nth($border-r, 1);
+            border: nth($border, 2);
         }
     }   
 }

@@ -19,6 +19,12 @@ body {
   padding-bottom: 100px;
 }
 
+/*Components*/
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
 /**header**/
 #header {
   width: 100%;
@@ -71,6 +77,11 @@ body {
 }
 
 /**fin del header**/
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
 /*seccion de cuadros del index*/
 #cuadros_section {
   margin-top: 10px;
@@ -122,6 +133,11 @@ body {
   border: 2px dashed rgb(39, 34, 25);
 }
 
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
 /**seccion de vidrofusion**/
 #vidro_section {
   margin-top: 10px;
@@ -173,6 +189,11 @@ body {
   border: 2px dashed rgb(39, 34, 25);
 }
 
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
 /**seccion de porcelanas**/
 #porce_section {
   margin-top: 10px;
@@ -224,6 +245,11 @@ body {
   border: 2px dashed rgb(39, 34, 25);
 }
 
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
 /**seccion de velas**/
 #velas_section {
   margin-top: 10px;
@@ -275,6 +301,11 @@ body {
   border: 2px dashed rgb(39, 34, 25);
 }
 
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
 /**footer**/
 #footer {
   background-color: rgb(232, 95, 241);
@@ -337,7 +368,7 @@ body {
   width: 3vw;
   background-color: cyan;
   border-radius: 60%;
-  border: 1px black solid;
+  border: 1px solid black;
 }
 #footer .footer_redes .redes_list .redes_text {
   text-decoration: none;
@@ -368,7 +399,7 @@ body {
   width: 3vw;
   background-color: lime;
   border-radius: 60%;
-  border: 1px black solid;
+  border: 1px solid black;
 }
 #footer .footer_contacto .contacto_list .contacto_text {
   text-decoration: none;
@@ -382,5 +413,12 @@ body {
   transform: translate(5px, 5px);
   transition: all 0.5s;
 }
+
+/*Base*/
+/*generales*/
+/*header*/
+/*footer*/
+/*variables generales*/
+/*vatiables del footer*/
 
 /*# sourceMappingURL=style.css.map */

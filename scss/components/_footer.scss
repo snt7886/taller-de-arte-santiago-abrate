@@ -1,20 +1,22 @@
+@import "../base/listas";
+@import "../base/variables";
 /**footer**/
 #footer {
-    background-color: rgb(232, 95, 241); 
-    width: 100%; 
-    height: 30vh;
-    padding-top: 10px;
-    border-top: 1px solid black;
+    background-color: nth($bg-c-f, 1); 
+    width: nth($width, 3); 
+    height: nth($height, 4);
+    padding-top: nth($pad-marg, 1);
+    border-top: nth($border, 1);
     display: grid;
     grid-template-areas: "direccion redes contacto";
     grid-template-columns: repeat(3, 1fr);
     animation: cambioFooter 10s ease infinite;
     @keyframes cambioFooter {
-        0%{background-color: rgb(232, 95, 241);}
-        20%{background-color: rgb(211, 44, 253);}
-        40%{background-color: rgb(125, 12, 255);}
-        60%{background-color: rgb(211, 44, 253);}
-        80%{background-color: rgb(232, 95, 241);}
+        0%{background-color: nth($bg-c-f, 1);}
+        20%{background-color: nth($bg-c-f, 2);}
+        40%{background-color: nth($bg-c-f, 3);}
+        60%{background-color: nth($bg-c-f, 2);}
+        80%{background-color: nth($bg-c-f, 1);}
     } 
     .footer_direccion {
         grid-area: direccion;
@@ -29,9 +31,9 @@
         }
         .direccion_text {
             text-decoration: none; 
-            color: lavender; 
-            font-family: 'Brygada 1918', serif; 
-            font-size: 15px;
+            color: nth($color, 1); 
+            font-family: $font-fam; 
+            font-size: nth($font-size, 1);
         }
     }
     .footer_redes {
@@ -45,20 +47,20 @@
             align-items: center;
             list-style: none;
             .redes_img {
-                height: 3vh;
-                width: 3vw;
-                background-color: cyan;
-                border-radius: 60%;
-                border: 1px black solid;
+                height: nth($height, 1);
+                width: nth($width, 2);
+                background-color: $c-redes;
+                border-radius: nth($border-r, 2);
+                border: nth($border, 1);
             }
             .redes_text {
                 text-decoration: none; 
-                color: lavender; 
-                font-family: 'Brygada 1918', serif; 
-                font-size: 15px;
+                color: nth($color, 1); 
+                font-family: $font-fam; 
+                font-size: nth($font-size, 1);
                 position: absolute;
                 &:hover {
-                    color: cyan;
+                    color: $c-redes;
                     transform: translate(5px, 5px);
                     transition: all 0.5s;
                 }
@@ -76,20 +78,20 @@
             align-items: center;
             list-style: none;
             .contacto_img {
-                height: 3vh;
-                width: 3vw;
-                background-color: lime;
-                border-radius: 60%;
-                border: 1px black solid;
+                height:nth($height, 1);
+                width: nth($width, 2);
+                background-color: $c-contacto;
+                border-radius: nth($border-r, 2);
+                border: nth($border, 1);
             }
             .contacto_text {
                 text-decoration: none; 
-                color: lavender; 
-                font-family: 'Brygada 1918', serif; 
-                font-size: 15px; 
+                color: nth($color, 1); 
+                font-family: $font-fam; 
+                font-size: nth($font-size, 1); 
                 position: absolute;
                 &:hover {
-                    color: lime;
+                    color: $c-contacto;
                     transform: translate(5px, 5px);
                     transition: all 0.5s;
                 }
