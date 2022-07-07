@@ -1,0 +1,99 @@
+/**footer**/
+#footer {
+    background-color: rgb(232, 95, 241); 
+    width: 100%; 
+    height: 30vh;
+    padding-top: 10px;
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-areas: "direccion redes contacto";
+    grid-template-columns: repeat(3, 1fr);
+    animation: cambioFooter 10s ease infinite;
+    @keyframes cambioFooter {
+        0%{background-color: rgb(232, 95, 241);}
+        20%{background-color: rgb(211, 44, 253);}
+        40%{background-color: rgb(125, 12, 255);}
+        60%{background-color: rgb(211, 44, 253);}
+        80%{background-color: rgb(232, 95, 241);}
+    } 
+    .footer_direccion {
+        grid-area: direccion;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .mapafooter {
+            &:hover {
+                transform: scale(1.20, 1);
+                transition: all ease 0.3s;
+            }
+        }
+        .direccion_text {
+            text-decoration: none; 
+            color: lavender; 
+            font-family: 'Brygada 1918', serif; 
+            font-size: 15px;
+        }
+    }
+    .footer_redes {
+        grid-area: redes;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .redes_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            .redes_img {
+                height: 3vh;
+                width: 3vw;
+                background-color: cyan;
+                border-radius: 60%;
+                border: 1px black solid;
+            }
+            .redes_text {
+                text-decoration: none; 
+                color: lavender; 
+                font-family: 'Brygada 1918', serif; 
+                font-size: 15px;
+                position: absolute;
+                &:hover {
+                    color: cyan;
+                    transform: translate(5px, 5px);
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+    .footer_contacto {
+        grid-area: contacto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .contacto_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            .contacto_img {
+                height: 3vh;
+                width: 3vw;
+                background-color: lime;
+                border-radius: 60%;
+                border: 1px black solid;
+            }
+            .contacto_text {
+                text-decoration: none; 
+                color: lavender; 
+                font-family: 'Brygada 1918', serif; 
+                font-size: 15px; 
+                position: absolute;
+                &:hover {
+                    color: lime;
+                    transform: translate(5px, 5px);
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}

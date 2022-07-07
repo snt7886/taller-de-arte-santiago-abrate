@@ -1,0 +1,45 @@
+/**seccion de vidrofusion**/
+#vidro_section {
+    margin-top: 10px;
+    .container .row .cero .vidro_cero {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        .vidro_title {
+            text-decoration: none;
+            color: rgb(45, 45, 54);
+            font-size: 20px;
+            font-family: 'Brygada 1918', serif;
+            font-style: italic;
+            &:hover {
+                animation: cambioTitles 5s ease infinite;
+                color: magenta;
+                transform: skew(10deg, 1deg);
+                transition: all 0.5s;
+                @keyframes cambioTitles {
+                    0%{color: magenta;}
+                    33% {color: violet;}
+                    66% {color: pink;}
+                }  
+            }
+
+        }
+    }
+    .container .row div[ class~="col-lg-3"] div[ class] {
+        border: 1px solid black;
+        border-radius: 10%;
+        padding: 10px;
+        background-color: beige;
+        color: rgba(0, 0, 0, 0.712); 
+        font-family: 'Brygada 1918', serif; 
+        font-size: 20px;
+        width: fit-content;
+        .vidro_img {
+            height: 200px;
+            width: 200px;
+            border-radius: 10%;
+            border: 2px dashed rgb(39, 34, 25);
+        }
+    }   
+}
