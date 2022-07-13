@@ -1,5 +1,8 @@
 @import "../base/listas";
 @import "../base/variables";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixins";
 /**footer**/
 #footer {
     background-color: nth($bg-c-f, 1); 
@@ -61,8 +64,7 @@
                 position: absolute;
                 &:hover {
                     color: $c-redes;
-                    transform: translate(5px, 5px);
-                    transition: all 0.5s;
+                    @extend %footer_hover;
                 }
             }
         }
@@ -92,8 +94,7 @@
                 position: absolute;
                 &:hover {
                     color: $c-contacto;
-                    transform: translate(5px, 5px);
-                    transition: all 0.5s;
+                    @extend %footer_hover;
                 }
             }
         }

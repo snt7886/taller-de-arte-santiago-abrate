@@ -1,5 +1,8 @@
 @import "../base/listas";
 @import "../base/variables";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixins";
 /**seccion de vidrofusion**/
 #vidro_section {
     margin-top: nth($pad-marg, 1);
@@ -9,11 +12,7 @@
         margin-top: nth($pad-marg, 2);
         width: nth($width, 3);
         .vidro_title {
-            text-decoration: none;
-            color: nth($color, 5);
-            font-size:nth($font-size, 2);
-            font-family: $font-fam;
-            font-style: $font-stl;
+            @extend %title-sections;
             &:hover {
                 animation: cambioTitles 5s ease infinite;
                 color: nth($color, 2);
@@ -30,13 +29,6 @@
     }
     .container .row div[ class~="col-lg-3"] div[ class] {
         border: nth($border, 1);
-        border-radius: nth($border-r, 1);
-        padding: nth($pad-marg, 1);
-        background-color: $bg-c;
-        color: nth($color, 6); 
-        font-family: $font-fam; 
-        font-size: nth($font-size, 2);
-        width: nth($width, 1);
         .vidro_img {
             height: nth($height, 5);
             width: nth($width, 4);
